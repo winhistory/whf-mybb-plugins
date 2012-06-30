@@ -1,0 +1,1102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme name="BlackMamba v2.1.6" version="1605">
+	<properties>
+		<templateset><![CDATA[8]]></templateset>
+		<editortheme><![CDATA[default]]></editortheme>
+		<imgdir><![CDATA[images/blackmamba]]></imgdir>
+		<logo><![CDATA[images/blackmamba/logo.png]]></logo>
+		<tablespace><![CDATA[4]]></tablespace>
+		<borderwidth><![CDATA[1]]></borderwidth>
+	</properties>
+	<stylesheets>
+		<stylesheet name="global.css" version="1605"><![CDATA[
+#top_1 {
+	width: 100%;
+	clear: both;
+	background-color: rgba(0,0,0,0.4);
+	border-bottom: 1px solid #2F2F33;
+	margin-bottom: 10px;
+}
+
+#top_1 img {
+	margin: 10px auto;
+}
+
+.checkbox {
+	background: #1C1C1C;
+	color: #CFCFCF;
+	border: 1px solid #333333;
+	padding: 1px;
+}
+
+body {
+	background: url(images/blackmamba/bg-d.png);
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 1.4;
+        margin: 0 auto auto;
+        padding: 0;	
+	font-family: Verdana, Arial, Sans-Serif;
+	font-size: 13px;
+}
+
+.searchbox {
+	background:#4d4d4d;
+	padding:4px 4px 4px 22px;
+	border:1px solid #333;
+	width:100px;
+	height:8px;
+}
+
+.menu {
+	height: 25px;
+	text-align: right;
+}
+
+.menu li a {
+        padding: 0 10px;
+}
+
+.menu li a.nav {
+	width: 170px;
+	border-top: 0;
+	border-left: 0;
+}
+
+a:link {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	color: #CFCFCF;
+	text-decoration: none;
+}
+
+#container {
+	background: #1B1B1B;
+	width: 85%;
+	min-width: 970px;
+	max-width: 1500px;
+	color: #FFFFFF;
+	border: 1px solid #373737;
+	margin: auto auto;
+	padding: 5px;
+	text-align: left;
+	border-radius: 5px 5px 0px 0px;
+}
+
+#content {
+	/* FIX: Make internet explorer wrap correctly */
+	width: auto !important;
+}
+
+.logo {
+	text-align: center;
+}
+
+.menu ul {
+	color: #000000;
+	padding: 4px;
+	
+	font-weight: bold;
+}
+
+.menu ul a:link {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.menu ul a:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.menu ul a:hover, .menu ul a:active {
+	color: #D1D4CF;
+	text-decoration: none;
+}
+
+#panel {
+	color: #CFCFCF;
+	border: 1px solid #333333;
+	padding: 8px;
+	
+	font-size: 9px;
+}
+
+#panel .remember_me input {
+	vertical-align: middle;
+	margin-top: -1px;
+}
+
+table {
+	color: #CFCFCF;
+	font-family: Verdana, Arial, Sans-Serif;
+	font-size: 13px;
+}
+
+.tborder {
+	width: 100%;
+}
+
+.tbody {
+	background: #333;
+}
+
+.thead {
+	background: url(images/blackmamba/thead.png) repeat-x #323232;
+	color: #ffffff;
+	-moz-border-top-left-radius: 5px;
+	-moz-border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.thead a:link {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.thead a:visited {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.thead a:hover, .thead a:active {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+.tcat {
+	background: url('images/blackmamba/thead.png') repeat-x scroll 0 0 transparent;
+	color: #FFFFFF;
+	box-shadow: 1px 1px 1px 0 rgba(255, 255, 255, 0.1) inset;
+	
+	text-decoration: bold;
+	font-size: 12px;
+}
+
+.tcat a:link {
+	color: #FFFFFF;
+}
+
+.tcat a:visited {
+	color: #FFFFFF;
+}
+
+.tcat a:hover, .tcat a:active {
+	color: #CFCFCF;
+}
+
+.trow1 {
+	background: #232323;
+	box-shadow: 1px 1px 1px 0 rgba(255, 255, 255, 0.1) inset;
+}
+
+.trow2 {
+	background: #232323;
+	box-shadow: 1px 1px 1px 0 rgba(255, 255, 255, 0.1) inset;
+}
+
+.trow_shaded {
+	background: #6d2828;
+
+}
+
+.trow_selected td {
+	background: #edd400;
+	border:1px solid #c4a000;
+	color: #1c1c1c;
+}
+
+.trow_selected td a {
+	color: #232323 !important;
+}
+
+.trow_selected td a:hover {
+	color: #555 !important;
+}
+
+.trow_sep {
+	background: #1b1b1b;
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.tfoot {
+	background: url(images/blackmamba/thead.png) repeat-x scroll 0 0 #323232;
+	color: #ffffff;
+}
+
+.tfoot a:link {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.tfoot a:visited {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.tfoot a:hover, .tfoot a:active {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+.bottommenu {
+	color: #CFCFCF;
+	border: 1px solid #333333;
+	padding: 8px;
+}
+
+.navigation {
+	color: #FFFFFF;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.navigation a:link {
+	text-decoration: none;
+}
+
+.navigation a:visited {
+	text-decoration: none;
+}
+
+.navigation a:hover, .navigation a:active {
+	text-decoration: none;
+}
+
+.navigation .active {
+	color: #ffffff;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.smalltext {
+	font-size: 11px;
+}
+
+.smalltext_qr {
+	padding-left: 30px;
+	
+	font-size: 11px;
+}
+
+.largetext {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+input.textbox {
+	background: #1c1c1c;
+	color: #CFCFCF;
+	border: 1px solid #333333;
+	padding: 1px;
+}
+
+textarea {
+	background: #1c1c1c;
+	width: 100%;
+	color: #CFCFCF;
+	border: 1px solid #333333;
+	padding: 1px;
+	border-radius:5px;
+	
+	font-family: Verdana, Arial, Sans-Serif;
+	font-size: 13px;
+}
+
+select {
+	background: #1c1c1c;
+	color: #CFCFCF;
+	border: 1px solid #333333;
+	padding: 1px;
+}
+
+select option {
+	background: #1c1c1c;
+}
+
+.editor {
+	background: #f1f1f1;
+	border: 1px solid #ccc;
+}
+
+.editor_control_bar {
+	/*background: url(http://freewayhost.net/files/3c821167358274af5558563118d9a4a6.png);
+	background-position: 10px center;
+	background-repeat: no-repeat;*/
+	padding-left: 20px;
+}
+
+.autocomplete {
+	background: #1C1C1C;
+	border: 1px solid #333333;
+	color: #CFCFCF;
+}
+
+.autocomplete_selected {
+	background: #888;
+	color: #1C1C1C;
+}
+
+.popup_menu {
+	background: #1C1C1C;
+	border: 1px solid #000;
+}
+
+.popup_menu .popup_item {
+	background: #1C1C1C;
+	border: 1px solid #333333;
+	color: #CFCFCF;
+}
+
+.popup_menu .popup_item:hover {
+	background: #888;
+	color: #1C1C1C;
+}
+
+.trow_reputation_positive {
+	background: #0C6;
+	color: #ffffff;
+}
+
+.trow_reputation_positive a:link {
+	color: #ffffff;
+}
+
+.trow_reputation_positive .smalltext {
+color:#ffffff;
+}
+
+.trow_reputation_negative {
+	background: #AE0023;
+	color: #ffffff;
+}
+
+.trow_reputation_negative .smalltext {
+color: #ffffff;
+}
+
+.trow_reputation_negative a:link {
+	color: #ffffff;
+}
+
+fieldset {
+border: 1px rgba(255, 255, 255, 0.1) inset;
+}
+
+.reputation_positive {
+	color: green;
+}
+
+.reputation_neutral {
+	color: #444;
+}
+
+.reputation_negative {
+	color: red;
+}
+
+.invalid_field {
+	border: 1px solid #f30;
+	color: #f30;
+}
+
+.valid_field {
+	border: 1px solid #0c0;
+}
+
+.validation_error {
+	background: url(images/blackmamba/invalid.gif) no-repeat center left;
+	color: #f30;
+	margin: 5px 0;
+	padding: 5px;
+	font-weight: bold;
+	font-size: 11px;
+	padding-left: 22px;
+}
+
+.validation_success {
+	background: url(images/blackmamba/valid.gif) no-repeat center left;
+	color: #00b200;
+	margin: 5px 0;
+	padding: 5px;
+	font-weight: bold;
+	font-size: 11px;
+	padding-left: 22px;
+}
+
+.validation_loading {
+	background: url(images/blackmamba/spinner.gif) no-repeat center left;
+	color: #555;
+	margin: 5px 0;
+	padding: 5px;
+	font-weight: bold;
+	font-size: 11px;
+	padding-left: 22px;
+}
+
+/* Additional CSS (Master) */
+img {
+	border: none;
+}
+
+.clear {
+	clear: both;
+}
+
+.hidden {
+	display: none;
+	float: none;
+	width: 1%;
+}
+
+.hiddenrow {
+	display: none;
+}
+
+.selectall {
+	background-color: #FFFBD9;
+	font-weight: bold;
+	text-align: center;
+}
+
+.float_left {
+	float: left;
+}
+
+.float_right {
+	float: right;
+}
+
+.menu ul {
+	color: #ffffff;
+	list-style: none;
+	margin: 0;
+	text-align: left;
+}
+
+.menu li {
+	display: inline;
+}
+
+.menu img {
+	padding-right: 5px;
+	vertical-align: top;
+}
+
+#panel .links {
+	margin: 0;
+	float: right;
+}
+
+.expcolimage {
+	float: right;
+	width: auto;
+	vertical-align: middle;
+	margin-top: 3px;
+}
+
+img.attachment {
+	border: 1px solid #333;
+	padding: 2px;
+}
+
+hr {
+	background-color: #000000;
+	color: #000000;
+	height: 1px;
+	border: 0px;
+}
+
+#copyright {
+	color: #FFFFFF;
+	font: 11px Verdana, Arial, Sans-Serif;
+	margin: 0;
+	padding: 10px 0 0 0;
+	text-align: center;
+}
+
+#debug {
+	float: right;
+	text-align: right;
+	margin-top: 0;
+}
+
+blockquote {
+	background: #515151;
+	border: 1px solid rgba(0, 0, 0, 0.7);
+	border-radius: 4px 4px 4px 4px;
+	box-shadow: 0 0 1px rgba(255, 255, 255, 0.3) inset;
+	margin: 0;
+	padding: 8px;
+}
+
+blockquote cite {
+	background: none repeat scroll 0 0 #333333;
+	border: 1px solid rgba(0, 0, 0, 0.7);
+	border-radius: 4px 4px 4px 4px;
+	box-shadow: 0 0 1px rgba(255, 255, 255, 0.3) inset;
+	display: block;
+	font-style: normal;
+	font-weight: bold;
+	margin-bottom: 3px;
+	padding: 4px;
+	font-style: normal;
+	font-weight: bold;
+}
+
+blockquote cite span {
+	float: right;
+	font-weight: normal;
+}
+
+blockquote cite span.highlight {
+	float: none;
+	font-weight: bold;
+	padding-bottom: 0;
+}
+
+.codeblock {
+	border: 1px solid rgba(0, 0, 0, 0.7);
+	border-radius: 4px 4px 4px 4px;
+	box-shadow: 0 0 1px rgba(255, 255, 255, 0.3) inset;
+	margin: 0;
+	padding: 8px;
+}
+
+.codeblock .title {
+	background: none repeat scroll 0 0 #333333;
+	border: 1px solid rgba(0, 0, 0, 0.7);
+	border-radius: 4px 4px 4px 4px;
+	box-shadow: 0 0 1px rgba(255, 255, 255, 0.3) inset;
+	display: block;
+	margin-bottom: 3px;
+	padding: 4px;
+	
+	font-style: normal;
+	font-weight: bold;
+}
+
+.codeblock code {
+	overflow: auto;
+	height: auto;
+	max-height: 200px;
+	display: block;
+	
+	font-family: Monaco, Consolas, Courier, monospace;
+	font-size: 13px;
+}
+
+.subforumicon {
+	border: 0;
+	vertical-align: middle;
+}
+
+.separator {
+	margin: 5px;
+	padding: 0;
+	height: 0px;
+	font-size: 1px;
+	list-style-type: none;
+}
+
+form {
+	margin: 0;
+	padding: 0;
+}
+
+.popup_menu .popup_item_container {
+	margin: 1px;
+	text-align: left;
+}
+
+.popup_menu .popup_item {
+	display: block;
+	padding: 3px;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+.popup_menu a.popup_item:hover {
+	text-decoration: none;
+}
+
+.autocomplete {
+	text-align: left;
+}
+
+.subject_new {
+	font-weight: bold;
+}
+
+.highlight {
+	background: #FFFFCC;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	color: #333;
+}
+
+.pm_alert {
+	background: #232323;
+	color: #cfcfcf;
+	border: 1px solid #6D2828;
+	text-align: center;
+	padding: 5px 20px;
+	margin-bottom: 15px;
+	
+	font-size: 11px;
+}
+
+.pm_alert a:link {
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.pm_alert a:visited {
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.red_alert {
+	background: #6D2828;
+	color: #FFF;
+	border: 1px solid #522828;
+	text-align: center;
+        text-weight:bold;
+	padding: 5px 20px;
+	margin-bottom: 15px;
+	
+	font-size: 11px;
+}
+
+.red_alert a:link {
+	color:#000000;
+	font-weight:bold;
+}
+
+.red_alert a:visited {
+	color:#000000;
+}
+
+.high_warning {
+	color: #CC0000;
+}
+
+.moderate_warning {
+	color: #F3611B;
+}
+
+.low_warning {
+	color: #AE5700;
+}
+
+div.error {
+	padding: 5px 10px;
+	border-top: 2px solid #FFD324;
+	border-bottom: 2px solid #FFD324;
+	background: #FFF6BF;
+	font-size: 12px;
+}
+
+div.error p {
+	margin: 0;
+	color: #000;
+	font-weight: normal;
+}
+
+div.error p em {
+	font-style: normal;
+	font-weight: bold;
+	padding-left: 24px;
+	display: block;
+	color: #C00;
+	background: url(images/blackmamba/error.gif) no-repeat 0;
+}
+
+div.error.ul {
+	margin-left: 24px;
+}
+
+.online {
+	color: #15A018;
+}
+
+.offline {
+	color: #C7C7C7;
+}
+
+.pagination {
+	font-size: 11px;
+	padding-top: 10px;
+	margin-bottom: 5px;
+}
+
+.tfoot .pagination, .tcat .pagination {
+	padding-top: 0;
+}
+
+.pagination .pages {
+	color: #CFCFCF;
+	font-weight: bold;
+}
+
+.pagination .pagination_current, .pagination a {
+	padding: 2px 6px;
+	margin-bottom: 3px;
+}
+
+.pagination a {
+	color: #CFCFCF;
+	border: 1px solid #333333;
+}
+
+.pagination .pagination_current {
+	background: #CFCFCF;
+	color: #1C1C1C;
+	border: 1px solid #333333;
+	
+	font-weight: bold;
+}
+
+.pagination a:hover {
+	background: #F5F5F5;
+	color: #000;
+	text-decoration: none;
+}
+
+.thread_legend, .thread_legend dd {
+	margin: 0;
+	padding: 0;
+}
+
+.thread_legend dd {
+	padding-bottom: 4px;
+	margin-right: 15px;
+}
+
+.thread_legend img {
+	margin-right: 4px;
+	vertical-align: bottom;
+}
+
+.forum_legend, .forum_legend dt, .forum_legend dd {
+	margin: 0;
+	padding: 0;
+}
+
+.forum_legend dd {
+	float: left;
+	margin-right: 10px;
+}
+
+.forum_legend dt {
+	margin-right: 10px;
+	float: left;
+}
+
+.success_message {
+	color: #00b200;
+	font-weight: bold;
+	font-size: 10px;
+	margin-bottom: 10px;
+}
+
+.error_message {
+	color: #C00;
+	font-weight: bold;
+	font-size: 10px;
+	margin-bottom: 10px;
+}
+
+.post_body {
+	padding: 5px;
+}
+
+.post_content {
+	padding: 5px 10px;
+}
+
+.quick_jump {
+	background: url(images/blackmamba/jump.gif) no-repeat 0;
+	width: 13px;
+	height: 13px;
+	padding-left: 13px; /* amount of padding needed for image to fully show */
+	vertical-align: middle;
+	border: none;
+}
+
+.repbox {
+	font-size:16px;
+	font-weight: bold;
+	padding:5px 7px 5px 7px;
+}
+
+._neutral {
+	background-color:#FAFAFA;
+	color: #999999;
+	border:1px solid #CCCCCC;
+}
+
+._minus {
+	background-color: #FDD2D1;
+	color: #CB0200;
+	border:1px solid #980201;
+}
+
+._plus {
+	background-color:#E8FCDC;
+	color: #008800;
+	border:1px solid #008800;
+}
+
+.pagination_breadcrumb {
+	background: #232323;
+	border: 2px solid #333;
+	padding: 5px;
+	margin-top: 5px;
+	
+	font-weight: normal;
+}
+
+.pagination_breadcrumb_link {
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.fitonpage {
+	color: #1c1c1c;
+}
+
+#spinner {
+	background: #1C1C1C !important;
+	border: 1px solid #333333 !important;
+	color: #CFCFCF !important;
+}
+
+]]>
+		</stylesheet>
+	</stylesheets>
+	<templates>
+		<template name="header" version="1605"><![CDATA[<div class="logo" id="top_1"><a href="{$mybb->settings['bburl']}/index.php"><img src="{$theme['logo']}" alt="{$mybb->settings['bbname']}" title="{$mybb->settings['bbname']}" /></a></div>
+	<div id="container">
+		<a name="top" id="top"></a>
+		<div id="header">
+			<div class="menu">
+				<ul>
+					<li><a href="{$mybb->settings['bburl']}/search.php"><img src="{$theme['imgdir']}/toplinks/search.gif" alt="" title="" />{$lang->toplinks_search}</a></li>
+					<li><a href="{$mybb->settings['bburl']}/memberlist.php"><img src="{$theme['imgdir']}/toplinks/memberlist.gif" alt="" title="" />{$lang->toplinks_memberlist}</a></li>
+					<li><a href="{$mybb->settings['bburl']}/calendar.php"><img src="{$theme['imgdir']}/toplinks/calendar.gif" alt="" title="" />{$lang->toplinks_calendar}</a></li>
+					<li><a href="{$mybb->settings['bburl']}/misc.php?action=help"><img src="{$theme['imgdir']}/toplinks/help.gif" alt="" title="" />{$lang->toplinks_help}</a></li>
+				</ul>
+			</div>
+			<hr class="hidden" />
+			<div id="panel">
+				{$welcomeblock}
+			</div>
+		</div>
+		<hr class="hidden" />
+		<br class="clear" />
+		<div id="content">
+			{$pm_notice}
+			{$bannedwarning}
+			{$bbclosedwarning}
+			{$unreadreports}
+			{$pending_joinrequests}
+			<navigation>
+			<br />]]></template>
+		<template name="postbit" version="1605"><![CDATA[{$ignore_bit}
+<a name="pid{$post['pid']}" id="pid{$post['pid']}"></a>
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder" style="{$post_extra_style} {$post_visibility}" id="post_{$post['pid']}">
+	<tbody>
+		<tr>
+			<td class="tcat">
+				<div class="float_left smalltext">
+					{$post['postdate']}, {$post['posttime']} <span id="edited_by_{$post['pid']}">{$post['editedmsg']}</span>
+				</div>
+				{$post['posturl']}
+			</td>
+		</tr>
+
+		<tr>
+			<td class="trow1 {$unapproved_shade}">
+				<table cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
+					<tr>
+						<td class="post_avatar" width="1" style="{$post['avatar_padding']}">
+							{$post['useravatar']}
+						</td>
+						<td class="post_author">
+							<strong><span class="largetext">{$post['profilelink']}</span></strong> {$post['onlinestatus']}<br />
+							<span class="smalltext">
+								{$post['usertitle']}<br />
+								{$post['userstars']}
+								{$post['groupimage']}
+							</span>
+						</td>
+						<td class="smalltext post_author_info" width="165">
+							{$post['user_details']}
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr>
+			<td class="trow2 post_content {$unapproved_shade}">
+				<span class="smalltext"><strong>{$post['icon']}{$post['subject']} {$post['subject_extra']}</strong></span>
+
+				<div class="post_body" id="pid_{$post['pid']}">
+					{$post['message']}
+				</div>
+				{$post['attachments']}
+				{$post['signature']}
+
+				<div class="post_meta" id="post_meta_{$post['pid']}">
+				{$post['iplogged']}
+				</div>
+			</td>
+		</tr>
+
+		<tr>
+			<td class="trow1 post_buttons {$unapproved_shade}">
+				<div class="author_buttons float_left">
+					{$post['button_email']}{$post['button_pm']}{$post['button_www']}{$post['button_find']}{$post['button_rep']}
+				</div>
+				<div class="post_management_buttons float_right">{$post['button_edit']}{$post['button_quickdelete']}{$post['button_quote']}{$post['button_multiquote']}{$post['button_report']}{$post['button_warn']}{$post['button_reply_pm']}{$post['button_replyall_pm']}{$post['button_forward_pm']}{$post['button_delete_pm']}
+				</div>
+			</td>
+		</tr>
+<td colspan="6" style="text-align: right" class="tfoot"></td>
+	</tbody>
+</table>]]></template>
+		<template name="footer" version="1605"><![CDATA[			<br />
+			<div class="bottommenu">
+				<div class="float_right">{$lang_select}</div>
+				<div>
+					<span class="smalltext"><a href="{$mybb->settings['contactlink']}">{$lang->bottomlinks_contactus}</a> | <a href="{$mybb->settings['homeurl']}">{$mybb->settings['homename']}</a> | <a href="#top">{$lang->bottomlinks_returntop}</a> | <a href="#content">{$lang->bottomlinks_returncontent}</a> | <a href="<archive_url>">{$lang->bottomlinks_litemode}</a> | <a href="{$mybb->settings['bburl']}/misc.php?action=syndication">{$lang->bottomlinks_syndication}</a></span>
+				</div>
+			</div>
+			</div>
+		<hr class="hidden" />
+			<div id="copyright">
+				<div id="debug"><debugstuff></div>
+				<!-- MyBB is free software developed and maintained by a volunteer community. 
+					 It would be much appreciated by the MyBB Group if you left the full copyright and "powered by" notice intact, 
+					 to show your support for MyBB.  If you choose to remove or modify the copyright below, 
+					 you may be refused support on the MyBB Community Forums.
+					 
+					 This is free software, support us and we'll support you. -->
+{$lang->powered_by} <a href="http://mybb.com/" target="_blank">MyBB{$mybbversion}</a>, &copy; 2002-{$copy_year} <a href="http://mybb.com/" target="_blank">MyBB Group</a>.<br />
+				<!-- End powered by -->
+                                <!-- MyBBCore provide completely free themes that we put a lot of effort into making.
+                                       We do this in our spare time to provide the MyBB community with a resource for quality themes.
+                                       All we ask for is this link back to our site, please keep it here.
+                                       If you remove it you may be refused support on our site. -->
+                               Theme Created by <a href="http://sparkks.net">Sparkks</a><br />
+				<br />
+<br class="clear" />
+<!-- The following piece of code allows MyBB to run scheduled tasks. DO NOT REMOVE -->{$task_image}<!-- End task image code -->
+{$auto_dst_detection}
+		</div>
+		</div>
+]]></template>
+		<template name="forumdisplay_rules" version="1605"><![CDATA[<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td class="thead"><strong>{$foruminfo['rulestitle']}</strong></td>
+</tr>
+<tr>
+<td class="trow1"><span class="smalltext">{$foruminfo['rules']}</span></td>
+</tr>
+<td class="tfoot" style="text-align: right" colspan="6"></td>
+</table>
+<br />]]></template>
+		<template name="postbit_classic" version="1605"><![CDATA[{$ignore_bit}
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder" style="{$post_extra_style} {$post_visibility}" id="post_{$post['pid']}">
+	<tr>
+		<td class="{$altbg}" width="15%" valign="top" style="white-space: nowrap; text-align: center;"><a name="pid{$post['pid']}" id="pid{$post['pid']}"></a>
+		<strong><span class="largetext">{$post['profilelink']}</span></strong> {$post['onlinestatus']}<br />
+		<span class="smalltext">
+			{$post['usertitle']}<br />
+			{$post['userstars']}
+			{$post['groupimage']}
+			{$post['useravatar']}<br />
+			{$post['user_details']}
+		</span>
+	</td>
+	<td class="{$altbg}" valign="top">
+		<table width="100%">
+			<tr><td>{$post['posturl']}<span class="smalltext"><strong>{$post['icon']}{$post['subject']} {$post['subject_extra']}</strong></span>
+			<br />
+			<div id="pid_{$post['pid']}" style="padding: 5px 0 5px 0;">
+				{$post['message']}
+			</div>
+			{$post['attachments']}
+			{$post['signature']}
+			<div style="text-align: right; vertical-align: bottom;" id="post_meta_{$post['pid']}">
+				<div id="edited_by_{$post['pid']}">{$post['editedmsg']}</div>
+				{$post['iplogged']}
+			</div>
+		</td></tr>
+	</table>
+</td>
+</tr>
+<tr>
+	<td class="{$altbg}" style="white-space: nowrap; text-align: center; vertical-align: middle;"><span class="smalltext">{$post['postdate']} {$post['posttime']}</span></td>
+	<td class="{$altbg}" style="vertical-align: middle;">
+		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tr valign="bottom">
+				<td align="left" ><span class="smalltext">{$post['button_email']}{$post['button_pm']}{$post['button_www']}{$post['button_find']}{$post['button_rep']}</span></td>
+				<td align="right">{$post['button_edit']}{$post['button_quickdelete']}{$post['button_quote']}{$post['button_multiquote']}{$post['button_report']}{$post['button_warn']}{$post['button_reply_pm']}{$post['button_replyall_pm']}{$post['button_forward_pm']}{$post['button_delete_pm']}</td>
+			</tr>
+		</table>
+	</td>
+</tr>
+<td class="tfoot" style="text-align: right" colspan="6"></td>
+</table>]]></template>
+		<template name="forumdisplay_subforums" version="1605"><![CDATA[<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td class="thead" colspan="5" align="center"><strong>{$lang->sub_forums_in}</strong></td>
+</tr>
+<tr>
+<td class="tcat" width="2%">&nbsp;</td>
+<td class="tcat" width="59%"><span class="smalltext"><strong>{$lang->forumbit_forum}</strong></span></td>
+<td class="tcat" width="7%" align="center" style="white-space: nowrap"><span class="smalltext"><strong>{$lang->forumbit_threads}</strong></span></td>
+<td class="tcat" width="7%" align="center" style="white-space: nowrap"><span class="smalltext"><strong>{$lang->forumbit_posts}</strong></span></td>
+<td class="tcat" width="15%" align="center"><span class="smalltext"><strong>{$lang->forumbit_lastpost}</strong></span></td>
+</tr>
+{$forums}
+<td class="tfoot" style="text-align: right" colspan="6"></td>
+</table>
+<br />]]></template>
+		<template name="forumbit_depth1_cat" version="1603"><![CDATA[<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<thead>
+<tr>
+<td class="thead" colspan="5">
+<div class="expcolimage"><img src="{$theme['imgdir']}/{$expcolimage}" id="cat_{$forum['fid']}_img" class="expander" alt="{$expaltext}" title="{$expaltext}" /></div>
+<div><strong><a href="{$forum_url}">{$forum['name']}</a></strong><br /><div class="smalltext">{$forum['description']}</div></div>
+</td>
+</tr>
+</thead>
+<tbody style="{$expdisplay}" id="cat_{$forum['fid']}_e">
+<tr>
+<td class="tcat" colspan="2"><span class="smalltext"><strong>{$lang->forumbit_forum}</strong></span></td>
+<td class="tcat" width="85" align="center" style="white-space: nowrap"><span class="smalltext"><strong>{$lang->forumbit_threads}</strong></span></td>
+<td class="tcat" width="85" align="center" style="white-space: nowrap"><span class="smalltext"><strong>{$lang->forumbit_posts}</strong></span></td>
+<td class="tcat" width="200" align="center"><span class="smalltext"><strong>{$lang->forumbit_lastpost}</strong></span></td>
+</tr>
+{$sub_forums}
+<td class="tfoot" style="text-align: right" colspan="6"></td>
+</tbody>
+</table>
+<br />]]></template>
+	</templates>
+</theme>

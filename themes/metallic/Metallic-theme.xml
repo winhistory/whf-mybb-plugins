@@ -1,0 +1,1044 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme name="Metallic" version="1605">
+	<properties>
+		<templateset><![CDATA[4]]></templateset>
+		<editortheme><![CDATA[default]]></editortheme>
+		<imgdir><![CDATA[images/metallic]]></imgdir>
+		<logo><![CDATA[images/metallic/logo.png]]></logo>
+		<tablespace><![CDATA[4]]></tablespace>
+		<borderwidth><![CDATA[1]]></borderwidth>
+	</properties>
+	<stylesheets>
+		<stylesheet name="global.css" version="1605"><![CDATA[body {
+	background: #efefef;
+	color: #000;
+	font-family: Verdana, Arial, Sans-Serif;
+	font-size: 13px;
+	text-align: center; /* IE 5 fix */
+	line-height: 1.4;
+}
+
+a:link {
+	color: #666458;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #666458;
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	color: #000;
+	text-decoration: underline;
+}
+
+#container {
+	background: #fff;
+	width: 95%;
+	color: #000000;
+	border: 1px solid #e4e4e4;
+	border-radius: 10px;
+	margin: auto auto;
+	padding: 20px;
+	text-align: left;
+}
+
+#content {
+	/* FIX: Make internet explorer wrap correctly */
+	width: auto !important;
+}
+
+.menu ul {
+	color: #000000;
+	font-weight: bold;
+	text-align: right;
+	padding: 4px;
+}
+
+.menu ul a:link {
+	color: #000000;
+	text-decoration: none;
+}
+
+.menu ul a:visited {
+	color: #000000;
+	text-decoration: none;
+}
+
+.menu ul a:hover, .menu ul a:active {
+	color: #d4d4d4;
+	text-decoration: none;
+}
+
+#panel {
+	background: #efefef;
+	color: #000000;
+	font-size: 11px;
+	border: 1px solid #D4D4D4;
+	padding: 8px;
+}
+
+#panel .remember_me input {
+	vertical-align: middle;
+	margin-top: -1px;
+}
+
+table {
+	color: #000000;
+	font-family: Verdana, Arial, Sans-Serif;
+	font-size: 13px;
+}
+
+.tborder {
+	background: #b2b2b2;
+	width: 100%;
+	margin: auto auto;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border: 1px solid #b2b2b2;
+}
+
+.thead {
+	background: #cbcbcb url(images/metallic/thead_bg.gif) top left repeat-x;
+	color: #666458;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.thead a:link {
+	color: #666458;
+	text-shadow: #ffffff 0px 0px 5px;
+	text-decoration: none;
+}
+
+.thead a:visited {
+	color: #666458;
+	text-shadow: #ffffff 0px 0px 5px;
+	text-decoration: none;
+}
+
+.thead a:hover, .thead a:active {
+	color: #666458;
+	text-shadow: #ffffff 0px 0px 5px;
+	text-decoration: underline;
+}
+
+.tcat {
+	background: #e9e9e9;
+	color: #000000;
+	font-size: 12px;
+}
+
+.tcat a:link {
+	color: #000000;
+}
+
+.tcat a:visited {
+	color: #000000;
+}
+
+.tcat a:hover, .tcat a:active {
+	color: #000000;
+}
+
+.trow1 {
+	background: #f5f5f5;
+}
+
+.trow2 {
+	background: #EFEFEF;
+}
+
+.trow_shaded {
+	background: #ffdde0;
+}
+
+.trow_selected td {
+	background: #FFFBD9;
+}
+
+.trow_sep {
+	background: #e5e5e5;
+	color: #000;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.tfoot {
+	background: #cdcdcd url(images/metallic/thead_bg.gif) top left repeat-x;
+	color: #666458;
+}
+
+.tfoot a:link {
+	color: #666458;
+	text-decoration: none;
+}
+
+.tfoot a:visited {
+	color: #666458;
+	text-decoration: none;
+}
+
+.tfoot a:hover, .tfoot a:active {
+	color: #666458;
+	text-decoration: underline;
+}
+
+.bottommenu {
+	background: #efefef;
+	color: #000000;
+	border: 1px solid #d4d4d4;
+	padding: 10px;
+}
+
+.navigation {
+	color: #000000;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.navigation a:link {
+	text-decoration: none;
+}
+
+.navigation a:visited {
+	text-decoration: none;
+}
+
+.navigation a:hover, .navigation a:active {
+	text-decoration: none;
+}
+
+.navigation .active {
+	color: #000000;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.smalltext {
+	font-size: 11px;
+}
+
+.largetext {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+input.textbox {
+	background: #ffffff;
+	color: #000000;
+	border: 1px solid #0f5c8e;
+	padding: 1px;
+}
+
+textarea {
+	background: #ffffff;
+	color: #000000;
+	border: 1px solid #0f5c8e;
+	padding: 2px;
+	font-family: Verdana, Arial, Sans-Serif;
+	line-height: 1.4;
+	font-size: 13px;
+}
+
+select {
+	background: #ffffff;
+	border: 1px solid #0f5c8e;
+}
+
+.editor {
+	background: #f1f1f1;
+	border: 1px solid #ccc;
+}
+
+.editor_control_bar {
+	background: #fff;
+	border: 1px solid #0f5c8e;
+}
+
+.autocomplete {
+	background: #fff;
+	border: 1px solid #000;
+	color: black;
+}
+
+.autocomplete_selected {
+	background: #adcee7;
+	color: #000;
+}
+
+.popup_menu {
+	background: #ccc;
+	border: 1px solid #000;
+}
+
+.popup_menu .popup_item {
+	background: #fff;
+	color: #000;
+}
+
+.popup_menu .popup_item:hover {
+	background: #C7DBEE;
+	color: #000;
+}
+
+.trow_reputation_positive {
+	background: #ccffcc;
+}
+
+.trow_reputation_negative {
+	background: #ffcccc;
+}
+
+.reputation_positive {
+	color: green;
+}
+
+.reputation_neutral {
+	color: #444;
+}
+
+.reputation_negative {
+	color: red;
+}
+
+.invalid_field {
+	border: 1px solid #f30;
+	color: #f30;
+}
+
+.valid_field {
+	border: 1px solid #0c0;
+}
+
+.validation_error {
+	background: url(images/metallic/invalid.gif) no-repeat center left;
+	color: #f30;
+	margin: 5px 0;
+	padding: 5px;
+	font-weight: bold;
+	font-size: 11px;
+	padding-left: 22px;
+}
+
+.validation_success {
+	background: url(images/metallic/valid.gif) no-repeat center left;
+	color: #00b200;
+	margin: 5px 0;
+	padding: 5px;
+	font-weight: bold;
+	font-size: 11px;
+	padding-left: 22px;
+}
+
+.validation_loading {
+	background: url(images/metallic/spinner.gif) no-repeat center left;
+	color: #555;
+	margin: 5px 0;
+	padding: 5px;
+	font-weight: bold;
+	font-size: 11px;
+	padding-left: 22px;
+}
+
+/* Additional CSS (Master) */
+img {
+	border: none;
+}
+
+.clear {
+	clear: both;
+}
+
+.hidden {
+	display: none;
+	float: none;
+	width: 1%;
+}
+
+.hiddenrow {
+	display: none;
+}
+
+.selectall {
+	background-color: #FFFBD9;
+	font-weight: bold;
+	text-align: center;
+}
+
+.float_left {
+	float: left;
+}
+
+.float_right {
+	float: right;
+}
+
+.menu ul {
+	list-style: none;
+	margin: 0;
+}
+
+.menu li {
+	display: inline;
+	padding-left: 5px;
+}
+
+.menu img {
+	padding-right: 5px;
+	vertical-align: top;
+}
+
+#panel .links {
+	margin: 0;
+	float: right;
+}
+
+.expcolimage {
+	float: right;
+	width: auto;
+	vertical-align: middle;
+	margin-top: 3px;
+}
+
+img.attachment {
+	border: 1px solid #E9E5D7;
+	padding: 2px;
+}
+
+hr {
+	background-color: #000000;
+	color: #000000;
+	height: 1px;
+	border: 0px;
+}
+
+#copyright {
+	font: 11px Verdana, Arial, Sans-Serif;
+	margin: 0;
+	padding: 10px 0 0 0;
+}
+
+#debug {
+	float: right;
+	text-align: right;
+	margin-top: 0;
+}
+
+blockquote {
+	border: 1px solid #ccc;
+	margin: 0;
+	background: #fff;
+	padding: 4px;
+}
+
+blockquote cite {
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+	font-style: normal;
+	display: block;
+	margin: 4px 0;
+}
+
+blockquote cite span {
+	float: right;
+	font-weight: normal;
+}
+
+blockquote cite span.highlight {
+	float: none;
+	font-weight: bold;
+	padding-bottom: 0;
+}
+
+.codeblock {
+	background: #fff;
+	border: 1px solid #ccc;
+	padding: 4px;
+}
+
+.codeblock .title {
+	border-bottom: 1px solid #ccc;
+	font-weight: bold;
+	margin: 4px 0;
+}
+
+.codeblock code {
+	overflow: auto;
+	height: auto;
+	max-height: 200px;
+	display: block;
+	font-family: Monaco, Consolas, Courier, monospace;
+	font-size: 13px;
+}
+
+.subforumicon {
+	border: 0;
+	vertical-align: middle;
+}
+
+.separator {
+	margin: 5px;
+	padding: 0;
+	height: 0px;
+	font-size: 1px;
+	list-style-type: none;
+}
+
+form {
+	margin: 0;
+	padding: 0;
+}
+
+.popup_menu .popup_item_container {
+	margin: 1px;
+	text-align: left;
+}
+
+.popup_menu .popup_item {
+	display: block;
+	padding: 3px;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+.popup_menu a.popup_item:hover {
+	text-decoration: none;
+}
+
+.autocomplete {
+	text-align: left;
+}
+
+.subject_new {
+	font-weight: bold;
+}
+
+.highlight {
+	background: #FFFFCC;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.pm_alert {
+	background: #FFF6BF;
+	border: 1px solid #FFD324;
+	text-align: center;
+	padding: 5px 20px;
+	margin-bottom: 15px;
+	font-size: 11px;
+}
+
+.red_alert {
+	background: #FBE3E4;
+	border: 1px solid #A5161A;
+	color: #A5161A;
+	text-align: center;
+	padding: 5px 20px;
+	margin-bottom: 15px;
+	font-size: 11px;
+}
+
+.high_warning {
+	color: #CC0000;
+}
+
+.moderate_warning {
+	color: #F3611B;
+}
+
+.low_warning {
+	color: #AE5700;
+}
+
+div.error {
+	padding: 5px 10px;
+	border-top: 2px solid #FFD324;
+	border-bottom: 2px solid #FFD324;
+	background: #FFF6BF;
+	font-size: 12px;
+}
+
+div.error p {
+	margin: 0;
+	color: #000;
+	font-weight: normal;
+}
+
+div.error p em {
+	font-style: normal;
+	font-weight: bold;
+	padding-left: 24px;
+	display: block;
+	color: #C00;
+	background: url(images/metallic/error.gif) no-repeat 0;
+}
+
+div.error.ul {
+	margin-left: 24px;
+}
+
+.online {
+	color: #15A018;
+}
+
+.offline {
+	color: #C7C7C7;
+}
+
+.pagination {
+	font-size: 11px;
+	padding-top: 10px;
+	margin-bottom: 5px;
+}
+
+.tfoot .pagination, .tcat .pagination {
+	padding-top: 0;
+}
+
+.pagination .pages {
+	font-weight: bold;
+}
+
+.pagination .pagination_current, .pagination a {
+	padding: 2px 6px;
+	margin-bottom: 3px;
+}
+
+.pagination a {
+	border: 1px solid #81A2C4;
+}
+
+.pagination .pagination_current {
+	background: #F5F5F5;
+	border: 1px solid #81A2C4;
+	font-weight: bold;
+	color: #000;
+}
+
+.pagination a:hover {
+	background: #F5F5F5;
+	text-decoration: none;
+}
+
+.thread_legend, .thread_legend dd {
+	margin: 0;
+	padding: 0;
+}
+
+.thread_legend dd {
+	padding-bottom: 4px;
+	margin-right: 15px;
+}
+
+.thread_legend img {
+	margin-right: 4px;
+	vertical-align: bottom;
+}
+
+.forum_legend, .forum_legend dt, .forum_legend dd {
+	margin: 0;
+	padding: 0;
+}
+
+.forum_legend dd {
+	float: left;
+	margin-right: 10px;
+}
+
+.forum_legend dt {
+	margin-right: 10px;
+	float: left;
+}
+
+.success_message {
+	color: #00b200;
+	font-weight: bold;
+	font-size: 10px;
+	margin-bottom: 10px;
+}
+
+.error_message {
+	color: #C00;
+	font-weight: bold;
+	font-size: 10px;
+	margin-bottom: 10px;
+}
+
+.post_body {
+	padding: 5px;
+}
+
+.post_content {
+	padding: 5px 10px;
+}
+
+.quick_jump {
+	background: url(images/metallic/jump.gif) no-repeat 0;
+	width: 13px;
+	height: 13px;
+	padding-left: 13px; /* amount of padding needed for image to fully show */
+	vertical-align: middle;
+	border: none;
+}
+
+.repbox {
+	font-size:16px;
+	font-weight: bold;
+	padding:5px 7px 5px 7px;
+}
+
+._neutral {
+	background-color:#FAFAFA;
+	color: #999999;
+	border:1px solid #CCCCCC;
+}
+
+._minus {
+	background-color: #FDD2D1;
+	color: #CB0200;
+	border:1px solid #980201;
+}
+
+._plus {
+	background-color:#E8FCDC;
+	color: #008800;
+	border:1px solid #008800;
+}
+
+.pagination_breadcrumb {
+	background-color: #f5f5f5;
+	border: 1px solid #fff;
+	outline: 1px solid #ccc;
+	padding: 5px;
+	margin-top: 5px;
+	font-weight: normal;
+	white-space: nowrap;
+}
+
+.pagination_breadcrumb_link {
+	vertical-align: middle;
+	cursor: pointer;
+}]]>
+		</stylesheet>
+		<stylesheet name="usercp.css" attachedto="usercp.php|usercp2.php|private.php" version="1605"><![CDATA[.usercp_nav_item {
+	display: block;
+	padding: 1px 0 1px 23px;
+}
+.usercp_nav_composepm {
+	background: url('images/usercp/composepm.gif') no-repeat left center;
+}
+
+.usercp_nav_pmfolder {
+	background: url('images/usercp/pmfolder.gif') no-repeat left center;
+}
+
+.usercp_nav_sub_pmfolder {
+	padding-left: 40px;
+	background: url('images/usercp/sub_pmfolder.gif') no-repeat left center;
+}
+
+.usercp_nav_trash_pmfolder {
+	padding-left: 40px;
+	background: url('images/usercp/trash_pmfolder.gif') no-repeat left center;
+}
+
+.usercp_nav_pmtracking {
+	background: url('images/usercp/pmtracking.gif') no-repeat left center;
+}
+
+.usercp_nav_pmfolders {
+	background: url('images/usercp/editfolders.gif') no-repeat left center;
+}
+
+.usercp_nav_profile {
+	background: url('images/usercp/profile.gif') no-repeat left center;
+}
+
+.usercp_nav_email {
+	padding-left: 40px;
+	background: url('images/usercp/email.gif') no-repeat left center;
+}
+
+.usercp_nav_password {
+	padding-left: 40px;
+	background: url('images/usercp/password.gif') no-repeat left center;
+}
+
+.usercp_nav_username {
+	padding-left: 40px;
+	background: url('images/usercp/username.gif') no-repeat left center;
+}
+
+.usercp_nav_editsig {
+	padding-left: 40px;
+	background: url('images/usercp/editsig.gif') no-repeat left center;
+}
+
+.usercp_nav_avatar {
+	padding-left: 40px;
+	background: url('images/usercp/avatar.gif') no-repeat left center;
+}
+
+.usercp_nav_options {
+	background: url('images/usercp/options.gif') no-repeat left center;
+}
+
+.usercp_nav_usergroups {
+	background: url('images/usercp/usergroups.gif') no-repeat left center;
+}
+
+.usercp_nav_editlists {
+	background: url('images/usercp/editlists.gif') no-repeat left center;
+}
+
+.usercp_nav_attachments {
+	background: url('images/usercp/attachments.gif') no-repeat left center;
+}
+
+.usercp_nav_drafts {
+	background: url('images/usercp/drafts.gif') no-repeat left center;
+}
+
+.usercp_nav_subscriptions {
+	background: url('images/usercp/subscriptions.gif') no-repeat left center;
+}
+
+.usercp_nav_fsubscriptions {
+	background: url('images/usercp/fsubscriptions.gif') no-repeat left center;
+}
+
+.usercp_nav_notepad {
+	background: url('images/usercp/notepad.gif') no-repeat left center;
+}
+
+.usercp_nav_viewprofile {
+	background: url('images/usercp/viewprofile.gif') no-repeat left center;
+}
+
+.usercp_nav_home {
+	background: url('images/usercp/home.gif') no-repeat left center;
+}
+
+.usercp_notepad {
+	width: 99%;
+}
+
+.usercp_container {
+	margin: 5px;
+	padding: 8px;
+	border:1px solid #CCCCCC;
+}]]>
+		</stylesheet>
+		<stylesheet name="modcp.css" attachedto="modcp.php" version="1605"><![CDATA[.modcp_nav_item {
+	display: block;
+	padding: 1px 0 1px 23px;
+}
+
+.modcp_nav_home {
+	background: url('images/modcp/home.gif') no-repeat left center;
+}
+
+.modcp_nav_announcements {
+	background: url('images/modcp/announcements.gif') no-repeat left center;
+}
+
+.modcp_nav_reports {
+	background: url('images/modcp/reports.gif') no-repeat left center;
+}
+
+.modcp_nav_modqueue {
+	background: url('images/modcp/modqueue.gif') no-repeat left center;
+}
+
+.modcp_nav_modlogs {
+	background: url('images/modcp/modlogs.gif') no-repeat left center;
+}
+
+.modcp_nav_editprofile {
+	background: url('images/modcp/editprofile.gif') no-repeat left center;
+}
+
+.modcp_nav_banning {
+	background: url('images/modcp/banning.gif') no-repeat left center;
+}
+
+.modcp_nav_warninglogs {
+	background: url('images/modcp/warninglogs.gif') no-repeat left center;
+}
+
+.modcp_nav_ipsearch {
+	background: url('images/modcp/ipsearch.gif') no-repeat left center;
+}
+
+.modqueue_message {
+	overflow: auto;
+	max-height: 250px;
+}
+
+.modqueue_controls {
+	width: 270px;
+	float: right;
+	text-align: center;
+	border: 1px solid #ccc;
+	background: #fff;
+	padding: 6px;
+	font-weight: bold;
+}
+
+.modqueue_controls label {
+	margin-right: 8px;
+}
+
+.label_radio_ignore, .label_radio_delete, .label_radio_approve {
+	font-weight: bold;
+}
+
+.modqueue_meta {
+	color: #444;
+	font-size: 95%;
+	margin-bottom: 8px;
+}
+
+.modqueue_mass {
+	list-style: none;
+	margin: 0;
+	width: 150px;
+	padding: 0;
+}
+
+.modqueue_mass li {
+	margin-bottom: 4px;
+	padding: 0;
+}
+
+.modqueue_mass li a {
+	display: block;
+	padding: 4px;
+	border: 1px solid transparent;
+}
+
+.modqueue_mass li a:hover {
+	background: #efefef;
+	border: 1px solid #ccc;
+	text-decoration: none;
+}]]>
+		</stylesheet>
+		<stylesheet name="star_ratings.css" attachedto="forumdisplay.php|showthread.php" version="1605"><![CDATA[.star_rating,
+.star_rating li a:hover,
+.star_rating .current_rating {
+	background: url(images/star_rating.gif) left -1000px repeat-x;
+	vertical-align: middle;
+}
+
+.star_rating {
+	position: relative;
+	width:80px;
+	height:16px;
+	overflow: hidden;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	background-position: left top;
+}
+
+td .star_rating {
+	margin: auto;
+}
+
+.star_rating li {
+	display: inline;
+}
+
+.star_rating li a,
+.star_rating .current_rating {
+	position: absolute;
+	text-indent: -1000px;
+	height: 16px;
+	line-height: 16px;
+	outline: none;
+	overflow: hidden;
+	border: none;
+	top:0;
+	left:0;
+}
+
+.star_rating_notrated li a:hover {
+	background-position: left bottom;
+}
+
+.star_rating li a.one_star {
+	width:20%;
+	z-index:6;
+}
+
+.star_rating li a.two_stars {
+	width:40%;
+	z-index:5;
+}
+
+.star_rating li a.three_stars {
+	width:60%;
+	z-index:4;
+}
+
+.star_rating li a.four_stars {
+	width:80%;
+	z-index:3;
+}
+
+.star_rating li a.five_stars {
+	width:100%;
+	z-index:2;
+}
+
+.star_rating .current_rating {
+	z-index:1;
+	background-position: left center;
+}
+
+.star_rating_success, .success_message {
+	color: #00b200;
+	font-weight: bold;
+	font-size: 10px;
+	margin-bottom: 10px;
+}
+
+.inline_rating {
+	float: left;
+	vertical-align: middle;
+	padding-right: 5px;
+}]]>
+		</stylesheet>
+		<stylesheet name="showthread.css" attachedto="showthread.php" version="1605"><![CDATA[ul.thread_tools, ul.thread_tools li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+ul.thread_tools li {
+	padding-left: 26px;
+	padding-bottom: 4px;
+	margin-bottom: 3px;
+	font-size: 11px;
+}
+
+ul.thread_tools li.printable {
+	background: url('images/printable.gif') no-repeat 0px 0px;
+}
+
+ul.thread_tools li.sendthread {
+	background: url('images/send.gif') no-repeat 0px 0px;
+}
+
+ul.thread_tools li.subscription_add {
+	background: url('images/subscribe.gif') no-repeat 0px 0px;
+}
+
+ul.thread_tools li.subscription_remove {
+	background: url('images/unsubscribe.gif') no-repeat 0px 0px;
+}]]>
+		</stylesheet>
+	</stylesheets>
+</theme>
