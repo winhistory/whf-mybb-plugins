@@ -1,0 +1,10 @@
+whf-mybb-plugins
+----------------
+
+This repository contains various MyBB plugins written for the Winhistory Forum.
+
+    contrib/   - contributions to other plugins, mostly language files
+    plugins/   - the source code of the plugins
+    
+Please note that every plugin with the prefix 'whf' was specifically written
+for the Winhistory Forum and may not work in a vanilla MyBB installation.

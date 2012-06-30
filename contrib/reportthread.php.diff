@@ -1,0 +1,63 @@
+--- a/inc/plugins/reportthread.php	2011-05-26 09:08:32.000000000 +0200
++++ b/inc/plugins/reportthread.php	2012-06-30 21:39:34.230317273 +0200
+@@ -20,7 +20,7 @@
+ 	die("Direct initialization of this file is not allowed.<br /><br />Please make sure IN_MYBB is defined.");
+ }
+ 
+-$plugins->add_hook('report_do_report_end', 'reportthread_dopost');
++$plugins->add_hook('report_do_report_end', 'reportthread_dopost', 0);
+ 
+ function reportthread_info()
+ {
+@@ -115,7 +115,7 @@
+ function reportthread_dopost()
+ {
+ 	require_once(MYBB_ROOT . "inc/datahandlers/post.php");
+-	global $db, $mybb;
++	global $db, $mybb, $cache;
+ 	
+ 	if(intval($mybb->settings['rtt_enabled']) == 1 || preg_replace("/[^a-z]/i", "", $mybb->settings['rtt_enabled']) == "yes")
+ 	{
+@@ -126,21 +126,21 @@
+ 		$tlink = get_thread_link($thread['tid']);
+ 		$flink = get_forum_link($thread['fid']);
+ 		
+-		$post_data = $mybb->user['username'] . " has reported a post.
++		$post_data = $mybb->user['username'] . " hat einen Beitrag gemeldet.
+ 
+-Original Thread: [url=" . $mybb->settings['bburl'] . "/$tlink]" . $thread['subject'] . "[/url]
+-Forum: [url=" . $mybb->settings['bburl'] . "/$flink]" . $forum['name'] . "[/url]
+-
+-Reason Given:
++Grund:
+ [quote=\"" . $mybb->user['username'] . "\" dateline=\"" . time() . "\"]" . $mybb->input['reason'] . "[/quote]
+ 
+-Post Content:
++Thread: [url=" . $mybb->settings['bburl'] . "/$tlink]" . $thread['subject'] . "[/url]
++Forum: [url=" . $mybb->settings['bburl'] . "/$flink]" . $forum['name'] . "[/url]
++
++Beitragstext: 
+ [quote=\"" . $post['username'] . "\" pid=\"" . $post['pid'] . "\" dateline=\"" . $post['dateline'] . "\"]" . $post['message'] . "[/quote]";
+ 		
+ 		$new_thread = array(
+ 			"fid" => $mybb->settings['rtt_fid'],
+ 			"prefix" => 0,
+-			"subject" => "Reported Post By " . $mybb->user['username'],
++			"subject" => "Beitrag gemeldet von " . $mybb->user['username'],
+ 			"icon" => 0,
+ 			"uid" => $mybb->user['uid'],
+ 			"username" => $mybb->user['username'],
+@@ -155,6 +155,12 @@
+ 		
+ 		if($posthandler->validate_thread())
+ 			$thread_info = $posthandler->insert_thread();
++			
++			
++		// mark all recent reports as read
++		$db->update_query("reportedposts", array('reportstatus' => 1), "dateline='".TIME_NOW."'");
++	    $cache->update_reportedposts();
+ 	}
+ }
++	
+ ?>
+\
