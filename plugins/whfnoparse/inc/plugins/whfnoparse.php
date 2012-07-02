@@ -1,6 +1,6 @@
 <?php
 /**
- * Simple HTTPS/HTTP Dual Mode Plugin
+ * WHF [noparse] Plugin
  *
  */
 
