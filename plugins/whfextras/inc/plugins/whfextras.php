@@ -417,10 +417,10 @@ function whfextras_showthread_ismod() {
                        "{$closelinkch} />&nbsp;<strong>".$lang->close_thread.
                        "</strong></label>";
 
-	$closeoption .= "<br /><label><input type=\"checkbox\" class=\"checkbox\" ".
-	                    "name=\"modoptions[stickdummy]\" value=\"1\"".
-	                    "{$stickch} disabled=\"disabled\"/>&nbsp;<strong>".
-	                    $lang->stick_thread."</strong></label>";
+    $closeoption .= "<br /><label><input type=\"checkbox\" class=\"checkbox\" ".
+                        "name=\"modoptions[stickdummy]\" value=\"1\"".
+                        "{$stickch} disabled=\"disabled\"/>&nbsp;<strong>".
+                        $lang->stick_thread."</strong></label>";
 
     if(!empty($stickch)) {
         $closeoption .= "<input type=\"hidden\" ".
