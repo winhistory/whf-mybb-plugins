@@ -39,6 +39,8 @@ $plugins->add_hook("pre_output_page", "whfextras_pre_output_page");
 $plugins->add_hook("misc_start", "whfextras_changestyle");
 $plugins->add_hook("member_profile_end", "whfextras_member_nocontact");
 $plugins->add_hook("showthread_start", "whfextras_showthread");
+$plugins->add_hook("showthread_ismod", "whfextras_showthread_ismod");
+
 
 $plugins->add_hook("usercp_options_end", "whfextras_options_show");
 $plugins->add_hook("usercp_do_options_end", "whfextras_options_parse");
@@ -403,6 +405,26 @@ function whfextras_showthread() {
     ) {
         $lang->load('showthread');
         $lang->post_reply_img = "Neue Antwort schreiben";
+    }
+}
+
+function whfextras_showthread_ismod() {
+    global $closeoption;
+    global $lang, $closelinkch, $stickch;
+
+    $closeoption = "<br /><label><input type=\"checkbox\" class=\"checkbox\" ".
+                       "name=\"modoptions[closethread]\" value=\"1\"".
+                       "{$closelinkch} />&nbsp;<strong>".$lang->close_thread.
+                       "</strong></label>";
+
+	$closeoption .= "<br /><label><input type=\"checkbox\" class=\"checkbox\" ".
+	                    "name=\"modoptions[stickdummy]\" value=\"1\"".
+	                    "{$stickch} disabled=\"disabled\"/>&nbsp;<strong>".
+	                    $lang->stick_thread."</strong></label>";
+
+    if(!empty($stickch)) {
+        $closeoption .= "<input type=\"hidden\" ".
+                            "name=\"modoptions[stickthread]\" value=\"1\" />";
     }
 }
 ?>
