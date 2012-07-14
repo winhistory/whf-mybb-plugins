@@ -61,7 +61,7 @@ function resizeImage(img) {
         target: '_blank'
     });
         
-    if(img.up('blockquote')) {
+    if(img.up('blockquote:not(.spoiler)')) {
         /* quoted image, replace with text link */
         
         if(img.up('a')) {
