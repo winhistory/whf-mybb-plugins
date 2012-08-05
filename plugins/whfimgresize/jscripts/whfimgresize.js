@@ -97,7 +97,7 @@ function resizeImage(img) {
         
         img.wrap(link);
         img.observe('click', function (event) {
-            if(event.isMiddleClick() || event.ctrlKey) return;
+            if(event.isMiddleClick() || event.ctrlKey || event.shiftKey || event.metaKey) return;
         
             /* prevent default */
             event.stop();
