@@ -61,10 +61,14 @@ function whfnoparse_parse_message_start($message) {
     );
 }
 
+function whfnoparse_clean_tag($match) {
+    return str_replace('&nbsp;', ' ', $match[1]);
+}
+
 function whfnoparse_parse_message_end($message) {
     global $lang;
 
-    return preg_replace(
+    return preg_replace_callback(
         '#'.
             preg_quote(WHFNOPARSE_CODE_TITLE, '#').
             preg_quote($lang->code.'<br />', '#').
@@ -72,8 +76,8 @@ function whfnoparse_parse_message_end($message) {
             preg_quote(WHFNOPARSE_MAGIC, '#').'(.*?)'.
             preg_quote(WHFNOPARSE_CODE_SUFFIX, '#').
         '#is',
-        '$1',
-        str_replace('&nbsp;', ' ', $message)
+        'whfnoparse_clean_tag',
+        $message
     );
 }
 
