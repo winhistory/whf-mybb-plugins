@@ -122,6 +122,11 @@ $popup_template = '
         <a href="http://myblackbox.net/quickupload/" target="_blank">QuickUpload</a>
     </td>
 </tr>
+<tr>
+    <td class="trow1 smalltext">
+        <a href="http://upload.euda.org/" target="_blank">EudaShare</a>
+    </td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -174,12 +179,6 @@ if(typeof PopupMenu !== "undefined") {
         $usercp_prefix."\n".'{$whfextras_avatar_options}'
     );
 
-    find_replace_templatesets(
-        'video_youtube_embed',
-        '#^.*$#s',
-        '<iframe width="560" height="315" src="https://www.youtube.com/embed/{$id}?rel=0" frameborder="0" allowfullscreen></iframe>'
-    );
-
     whfextras_disable_stuff(true);
 }
 
@@ -188,12 +187,6 @@ function whfextras_deactivate() {
     global $db;
 
     whfextras_disable_stuff(false);
-
-    find_replace_templatesets(
-        'video_youtube_embed',
-        '#^.*$#s',
-        '<object type="application/x-shockwave-flash" class="video_embed" style="width: 450px; height: 366px;" data="http://www.youtube.com/v/{$id}"><param name="movie" value="http://www.youtube.com/v/{$id}" /></object>'
-    );
 
     find_replace_templatesets(
         'header_welcomeblock_member',
