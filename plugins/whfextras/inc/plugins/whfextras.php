@@ -391,12 +391,21 @@ function whfextras_pre_output_page($page) {
 }
 
 function whfextras_member_nocontact() {
-    global $mybb, $memprofile, $profilefields;
+    global $mybb, $memprofile;
+
     if($mybb->user['uid'] == 0) {
         $memprofile['aim']   = "";
         $memprofile['yahoo'] = "";
         $memprofile['msn']   = "";
         $memprofile['icq']   = "";
+    }
+
+    if($memprofile['invisible']) {
+        global $memlastvisitdate, $memlastvisitsep, $memlastvisittime, $lang;
+
+        $memlastvisitdate = $lang->birthdayhidden;
+        $memlastvisittime = '';
+        $memlastvisitsep = '';
     }
 }
 
