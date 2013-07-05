@@ -28,7 +28,7 @@ function whfextras_info() {
         "website"        => "",
         "author"         => "gandro",
         "authorsite"     => "",
-        "version"        => "1.0",
+        "version"        => "1.1",
         "guid"           => "",
         "compatibility"  => "16*"
     );
@@ -41,6 +41,7 @@ $plugins->add_hook("member_profile_end", "whfextras_member_nocontact");
 $plugins->add_hook("showthread_start", "whfextras_showthread");
 $plugins->add_hook("showthread_ismod", "whfextras_showthread_ismod");
 
+$plugins->add_hook("memberlist_user", "whfextras_memberlist_invisibilefix");
 
 $plugins->add_hook("usercp_options_end", "whfextras_options_show");
 $plugins->add_hook("usercp_do_options_end", "whfextras_options_parse");
@@ -406,6 +407,14 @@ function whfextras_member_nocontact() {
         $memlastvisitdate = $lang->birthdayhidden;
         $memlastvisittime = '';
         $memlastvisitsep = '';
+    }
+}
+
+function whfextras_memberlist_invisibilefix() {
+    global $user, $lang;
+
+    if($user['invisible']) {
+        $user['lastactive'] = $user['regdate'];
     }
 }
 
