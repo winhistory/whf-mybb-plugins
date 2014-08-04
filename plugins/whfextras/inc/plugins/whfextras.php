@@ -102,12 +102,12 @@ $popup_template = '
 </tr>
 <tr>
     <td class="trow1 smalltext">
-        <a href="http://tiny.cc/whirc" target="_blank">IRC Channel</a>
+        <a href="https://sites.google.com/site/winhistoryirc/" target="_blank">IRC Channel</a>
     </td>
 </tr>
 <tr>
     <td class="trow1 smalltext">
-        <a href="http://pinkiserver.de/stats/" target="_blank">IRC Statistiken</a>
+        <a href="https://t23h.de/stats/" target="_blank">IRC Statistiken</a>
     </td>
 </tr>
 <tr>
