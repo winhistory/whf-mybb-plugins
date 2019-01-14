@@ -486,14 +486,14 @@ STYLESHEET;
             $recenttopics .= '<colgroup>
                                 <col span="1"/>
                                 <col span="1"/>
-                                <col span="1" style="width: 10ex;"/>
+                                <col span="1" style="width: 4em;"/>
                               </colgroup>';
         } else {
             $recenttopics .= '<colgroup>
-                                <col span="1" style="width: 75ex;"/>
-                                <col span="1" style="width: 30ex;"/>
+                                <col span="1" style="width: 42em;"/>
                                 <col span="1"/>
-                                <col span="1" style="width: 10ex;"/>
+                                <col span="1"/>
+                                <col span="1" style="width: 4em;"/>
                               </colgroup>';
         }
     
